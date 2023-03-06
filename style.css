@@ -1,0 +1,482 @@
+body {
+  font-family: "Josefin Sans";
+  background-color: #e6e6e6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Libre Baskerville";
+
+  color: #006600;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ddd;
+  font-size: 16px;
+  color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer p {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .footer {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .footer {
+    font-size: 20px;
+  }
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to right, rgba(242, 227, 12, 0.4), rgba(175, 180, 0, 0.8), rgba(242, 227, 12, 0.4));
+
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .navbar a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .navbar a {
+    font-size: 20px;
+  }
+}
+
+/* home page carousel css */
+#carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+}
+
+#carousel img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: auto;
+}
+
+
+
+#carousel img.active {
+  opacity: 1;
+}
+
+#carousel img:nth-of-type(1) {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  #carousel {
+    height: 250px;
+  }
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo {
+  background-image: url("./images/logo1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  height: 50px;
+  margin-right: 20px;
+  font-size: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #logo {
+    margin-right: 0;
+  }
+}
+
+
+
+/* review comments css */
+.comment {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.comment-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.comment-body {
+  flex: 1;
+}
+
+.comment-body h4 {
+  margin-top: 0;
+}
+
+.comment-date {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.comment-content {
+  margin-top: 10px;
+}
+
+.comment-reply-link {
+  color: #0073aa;
+  text-decoration: none;
+}
+
+.comment-reply-link:hover {
+  text-decoration: underline;
+}
+
+/* blog recipe section css*/
+.recipe-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.recipe-card header {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.recipe-card h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 30px;
+  margin: 0;
+}
+
+.recipe-card p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+.recipe-card section {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.recipe-card ul {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.recipe-card li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.recipe-card ol {
+  margin-bottom: 20px;
+}
+
+.recipe-card ol li {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+/* Contact page styles */
+
+/* Main section */
+#contact {
+  padding: 50px;
+  background-color: #f7f7f7;
+}
+
+/* Contact Us Page */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+#messageform {
+  max-width: 50rem;
+}
+
+#messageform h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#messageform label {
+  display: block;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+#messageform input,
+#messageform textarea {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+#messageform input:focus,
+#messageform textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #83b799;
+}
+
+#messageform button {
+  background-color: #83b799;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#messageform button:hover {
+  background-color: #628b6e;
+}
+
+@media (max-width: 768px) {
+  #messageform {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  #messageform input,
+  #messageform textarea {
+    font-size: 0.9rem;
+  }
+
+  #messageform button {
+    font-size: 1rem;
+  }
+}
+
+
+/* index image container*/
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  margin: 20px;
+  padding: 20px;
+  flex: 1;
+  max-width: 300px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.container > div:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  transition: all 0.2s ease;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.container h3 {
+  font-family: "Libre Baskerville";
+  color: #006600;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font-family: "Josefin Sans";
+  color: #666;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  flex-basis: calc(33.33% - 20px);
+  margin: 20px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .images-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    flex-basis: 100%;
+    margin: 20px 0;
+  }
+}
+
+
+.recipe-img {
+  max-width: 100%;
+  max-height: 400px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+
+/* Products */
+#products {
+  margin-top: 40px;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.product-table td, .product-table th {
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+
+.product-table th {
+  background-color: #7BB57F;
+  color: white;
+  font-weight: normal;
+}
+
+.product-table img {
+  max-width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.product-table td:last-child {
+  text-align: left;
+}
+
+.product-table td:last-child button {
+  background-color: #7BB57F;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.product-table td:last-child button:hover {
+  background-color: #4F7544;
+}
+
+select {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  font-size: 16px;
+  color: #333;
+}
+input[type=submit] {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
