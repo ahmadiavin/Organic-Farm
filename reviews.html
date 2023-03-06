@@ -83,13 +83,13 @@
         text-shadow: 2px 2px #ccc;
       }
     </style>
-    <h2>"We would love to hear from you! Please leave us a comment."</h2>
     <form action="#" method="POST">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required><br><br>
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br><br>
+      <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+        required><br><br>
 
       <label for="comment">Comment:</label>
       <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
@@ -105,6 +105,7 @@
 
       <input type="submit" value="Submit">
     </form>
+
 
   </main>
   <footer class="footer">
